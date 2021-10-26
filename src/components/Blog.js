@@ -25,19 +25,22 @@ const Blog = ()=> {
          })
     }, [search])
 
-    return(
-        <div> 
+    return( 
+        <div className="row"> 
+          
+
            {blogs?.articles?.map(blog => (
                
-               <div className="col-md-4" style={{backgroundColor: "black"}}>
+               <div className="col-md-4" id={blog.id} style={{backgroundColor: "black"}}>
                    cards
                    {console.log(blog.image)}
-                   <img src={blog.image} width="100px" height="100px"/>
+                   <img src={blog.image} height="300px" width="100%"/>
                </div>
            ))
            }
            {blogs?.totalArticles === 0 && (<div>Blogs not found</div>)}
         </div>
+
     )
 }
 
