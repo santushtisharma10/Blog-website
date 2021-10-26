@@ -28,10 +28,15 @@ const Blog = ()=> {
     return(
         <div> 
            {blogs?.articles?.map(blog => (
-
-               <div></div>
+               
+               <div className="col-md-4" style={{backgroundColor: "black"}}>
+                   cards
+                   {console.log(blog.image)}
+                   <img src={blog.image} width="100px" height="100px"/>
+               </div>
            ))
            }
+           {blogs?.totalArticles === 0 && (<div>Blogs not found</div>)}
         </div>
     )
 }
