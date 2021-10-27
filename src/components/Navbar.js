@@ -27,10 +27,10 @@ const Navbar = ()=> {
     return(
         <div style={{backgroundColor: "black"}}>
 
-            Navbar
+    
             {isLogin && (
             <div>
-                <input placeholder="search for blog" value={val} onChange={(e)=>setVal(e.target.value)} />
+                <input placeholder="Search for blog" value={val} onChange={(e)=>setVal(e.target.value)} />
                 <button type="submit" onClick={handleClick}>Search </button>
             </div>)}
 
