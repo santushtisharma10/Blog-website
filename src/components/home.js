@@ -17,7 +17,7 @@ const Home = () => {
     return(
 
         <div>
-            <h1>Hello</h1>
+            
             {!isLogin ? (<div >
             <GoogleLogin 
             clientId="849710855596-d51t3e11tq5oluco0aqpntljill22red.apps.googleusercontent.com"
