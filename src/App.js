@@ -6,11 +6,13 @@ import Home from './components/home';
 import Navbar from './components/Navbar';
 import { selectLogin } from './features/user';
 
+
 function App() {
 
   const isLogin = useSelector(selectLogin)
   return (
-    <div className="App">
+    <div className="App" >
+
       <Navbar />
       <Home />
 

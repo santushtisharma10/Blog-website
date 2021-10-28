@@ -38,8 +38,8 @@ const Blog = () => {
                         <a href={blog.url} target="_blank">
                             <div className="card">
                                 <img className="card-image" src={blog.image} height="250px" width="100%" />
-                                <div className="card-body">
-                                <h3 className="card-title">{blog.title}</h3>
+                                <div className="card-body" style={{padding: "30px"}} >
+                                <h2 className="card-title">{blog.title}</h2>
                                 <p className="card-text">{blog.description}</p>
                                 </div>
                                

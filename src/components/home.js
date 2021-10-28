@@ -18,12 +18,14 @@ const Home = () => {
 
         <div>
             
-            {!isLogin ? (<div >
+            {!isLogin && (<div style={{textAlign: "center"}}>
+<br /><br /><br /><br /><br /><br /><br /><br />
+                <h1 className="title">The Blog App</h1>
             <GoogleLogin 
             clientId="849710855596-d51t3e11tq5oluco0aqpntljill22red.apps.googleusercontent.com"
             render = {(renderProps) => (
 
-                <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="login_page">
+                <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="login_btn">
                     Login with Google
                 </button>
             )}
@@ -32,8 +34,8 @@ const Home = () => {
             isSignedIn={true}
             cookiePolicy={"single_host_origin"}
             />
-            </div>) : (<div>
-                Santushti Sharma</div>)}
+            <br /><br /><br /><br /><br /><br />
+            </div>) }
            
             
         </div>
